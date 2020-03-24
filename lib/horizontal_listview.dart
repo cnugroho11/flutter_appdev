@@ -9,7 +9,8 @@ class HorizontalList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-            image_caption: 'Cat1',
+            image_caption: 'shirt',
+            image_location: 'assets/images/cats/tshirt.png',
           )
         ],
       ),
@@ -18,10 +19,10 @@ class HorizontalList extends StatelessWidget {
 }
 
 class Category extends StatelessWidget {
+  final String image_location;
   final String image_caption;
-  final String image_name;
 
-  Category({this.image_caption, this.image_name});
+  Category({this.image_caption, this.image_location});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +31,10 @@ class Category extends StatelessWidget {
         child: Container(
           width: 100.0,
           child: ListTile(
-            title: Container(
-              child: Icon(Icons.shop, size: 50, color: Colors.blue,),
+            title: Image.asset(
+              image_location,
+              height: 80.0,
+              width: 100.0,
             ),
             subtitle: Container(
               alignment: Alignment.topCenter,
