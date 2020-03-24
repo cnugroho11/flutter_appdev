@@ -61,14 +61,14 @@ class _SideMenuState extends State<SideMenu> {
             onTap: (){},
             child: ListTile(
               title: Text('Pengaturan'),
-              leading: Icon(Icons.settings, color: Colors.blueAccent,),
+              leading: Icon(Icons.settings, color: Colors.green,),
             ),
           ),
           InkWell(
             onTap: (){},
             child: ListTile(
               title: Text('Info'),
-              leading: Icon(Icons.info, color: Colors.blueAccent,),
+              leading: Icon(Icons.info, color: Colors.grey,),
             ),
           ),
         ],

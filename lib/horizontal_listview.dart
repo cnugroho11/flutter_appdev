@@ -9,9 +9,29 @@ class HorizontalList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-            image_caption: 'shirt',
-            image_location: 'assets/images/cats/tshirt.png',
-          )
+            image_location: 'assets/images/cats/017-home.png',
+            image_caption: 'Cat1',
+          ),
+
+          Category(
+            image_location: 'assets/images/cats/farm-products.png',
+            image_caption: 'Cat2',
+          ),
+
+          Category(
+            image_location: 'assets/images/cats/010-detergent.png',
+            image_caption: 'Cat3',
+          ),
+
+          Category(
+            image_location: 'assets/images/cats/019-liquid.png',
+            image_caption: 'Cat4',
+          ),
+
+          Category(
+            image_location: 'assets/images/cats/honey.png',
+            image_caption: 'Cat5',
+          ),
         ],
       ),
     );
@@ -29,17 +49,21 @@ class Category extends StatelessWidget {
     return Padding(padding: const EdgeInsets.all(2),
       child: InkWell(onTap: (){},
         child: Container(
-          width: 100.0,
-          child: ListTile(
-            title: Image.asset(
-              image_location,
-              height: 80.0,
-              width: 100.0,
+          width: 90,
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                Image.asset(
+                  image_location,
+                  height: 50.0,
+                ),
+                Container(
+                  height: 20,
+                  alignment: Alignment.topCenter,
+                  child: Text(image_caption),
+                )
+              ],
             ),
-            subtitle: Container(
-              alignment: Alignment.topCenter,
-              child: Text(image_caption),
-            )
           ),
         ),
       ),

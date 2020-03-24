@@ -27,10 +27,9 @@ class _HomePageState extends State<HomePage> {
       child: new Carousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('assets/images/c1.jpg'),
-          AssetImage('assets/images/w3.jpeg'),
-          AssetImage('assets/images/m1.jpeg'),
-          AssetImage('assets/images/w1.jpeg'),
+          AssetImage('assets/images/car1.png'),
+          AssetImage('assets/images/car2.png'),
+          AssetImage('assets/images/car3.jpg'),
         ],
         autoplay: false,
         animationCurve: Curves.fastOutSlowIn,
@@ -57,9 +56,14 @@ class _HomePageState extends State<HomePage> {
           image_carousel,
           //padding
           new Padding(padding: const EdgeInsets.all(8.0),
-            child: new Text('Categories'),),
+            child: new Text('Categories'),
+          ),
           //horizontal categories
           HorizontalList(),
+          //prductrecent
+          new Padding(padding: const EdgeInsets.all(8.0),
+            child: new Text('Recent Product'),
+          ),
         ],
       ),
     );
