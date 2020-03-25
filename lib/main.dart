@@ -4,6 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 
 import 'package:tretika/drawer.dart';
 import 'package:tretika/horizontal_listview.dart';
+import 'package:tretika/products.dart';
 
 void main(){
   runApp(
@@ -64,6 +65,10 @@ class _HomePageState extends State<HomePage> {
           new Padding(padding: const EdgeInsets.all(8.0),
             child: new Text('Recent Product'),
           ),
+          Container(
+            height: 320.0,
+            child: Products(),
+          )
         ],
       ),
     );

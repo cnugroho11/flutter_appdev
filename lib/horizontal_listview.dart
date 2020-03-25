@@ -41,9 +41,7 @@ class HorizontalList extends StatelessWidget {
 class Category extends StatelessWidget {
   final String image_location;
   final String image_caption;
-
   Category({this.image_caption, this.image_location});
-
   @override
   Widget build(BuildContext context) {
     return Padding(padding: const EdgeInsets.all(2),
