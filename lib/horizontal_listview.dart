@@ -10,27 +10,27 @@ class HorizontalList extends StatelessWidget {
         children: <Widget>[
           Category(
             image_location: 'assets/images/cats/017-home.png',
-            image_caption: 'Cat1',
+            image_caption: 'Kebutuhan',
           ),
 
           Category(
             image_location: 'assets/images/cats/farm-products.png',
-            image_caption: 'Cat2',
+            image_caption: 'Makanan',
           ),
 
           Category(
             image_location: 'assets/images/cats/010-detergent.png',
-            image_caption: 'Cat3',
+            image_caption: 'Minuman',
           ),
 
           Category(
             image_location: 'assets/images/cats/019-liquid.png',
-            image_caption: 'Cat4',
+            image_caption: 'Sabun',
           ),
 
           Category(
             image_location: 'assets/images/cats/honey.png',
-            image_caption: 'Cat5',
+            image_caption: 'Lain Lain',
           ),
         ],
       ),

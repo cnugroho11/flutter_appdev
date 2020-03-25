@@ -24,6 +24,12 @@ class _ProductsState extends State<Products> {
       "picture": "assets/images/products/pro3.png",
       "old_price": 120,
       "price":80,
+    },
+    {
+      "name": "Sampo Clear",
+      "picture": "assets/images/products/pro4.jpg",
+      "old_price": 120,
+      "price":80,
     }
   ];
   @override
@@ -58,6 +64,36 @@ class Single_Prod extends StatelessWidget {
 });
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Card(
+      child: Hero(
+        tag: prod_name, child: Material(
+        child: InkWell(onTap: (){},
+          child: GridTile(
+            footer: Container(
+              color: Colors.white70,
+              child: ListTile(
+                leading: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold),),
+                title: Text("\$$prod_price",
+                  style: TextStyle(color: Colors.red,
+                    fontWeight: FontWeight.w800,
+                  )
+                ),
+                subtitle: Text("\$$prod_old_price",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w800,
+                    decoration:
+                      TextDecoration.lineThrough
+                  ),
+                ),
+              ),
+            ),
+            child: Image.asset(prod_picture,
+              fit: BoxFit.cover,
+            ),
+          ),
+        )
+      ),),
+    );
   }
 }
