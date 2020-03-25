@@ -1,6 +1,6 @@
-# tretika
+# TR_Etika
 
-A new Flutter application.
+Prototype e-commerce app untuk matakuliah Etika
 
 ## Getting Started
 
