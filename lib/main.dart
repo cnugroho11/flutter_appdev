@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
       appBar: new AppBar(
         elevation: 0.0,
         backgroundColor: Colors.blue,
-        title: Text('(TR Etika nama app)'),
+        title: Text('E-Warung'),
         actions: <Widget>[
           new IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){}),
           new IconButton(icon: Icon(Icons.shopping_cart, color: Colors.white,), onPressed: (){})
@@ -65,6 +65,7 @@ class _HomePageState extends State<HomePage> {
           new Padding(padding: const EdgeInsets.all(8.0),
             child: new Text('Recent Product'),
           ),
+          //grid
           Container(
             height: 320.0,
             child: Products(),
