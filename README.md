@@ -1,6 +1,6 @@
 # TR_Etika
 
-Prototype e-commerce app untuk matakuliah Etika
+Prototype e-commerce app for assignment
 
 ## Getting Started
 
